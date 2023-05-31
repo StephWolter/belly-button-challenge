@@ -22,10 +22,16 @@ console.log("Ids: ",bbIds);
 console.log("Meta: ",bbMeta);
 
 // Set up example from bbSamples to model bubble chart and bar chart after
-sampleOne = bbSamples[0];
+let sampleOne = bbSamples[0];
 console.log(sampleOne);
 
-function init(){
+// for updating the charts?
+createBarChart(sampleOne.id);
+createBubbleChart(sampleOne.id);
+createGaugeChart(sampleOne.id);
+createMetadataChart(sampleOne.id);
+
+// function init(){
 
 // FOR DROPDOWN MENU
 let dropdownIDs = document.getElementById('selDataset');
@@ -38,13 +44,9 @@ for (let i = 0; i < bbIds.length; i++) {
   dropdownIDs.append(dropdownOption);
 }
 
-// for updating the charts?
-createBarChart()
-createBubbleChart();
-createGaugeChart()
-createMetadataChart();
 
-}
+
+// }
 
 
 // // FOR UPDATING CHARTS
@@ -58,7 +60,7 @@ createMetadataChart();
 // dropdownIDs.addEventListener('change',createBarChart, createBubbleChart, createGaugeChart);
 
 // Set up example to model after
-init();
+// init();
 
 
 
@@ -142,7 +144,8 @@ function createMetadataChart(id) {
         }
       }
       metadataElement.appendChild(table);
-    } else {
+    } 
+    else {
       metadataElement.textContent = 'No metadata available for ID: ' + id;
     }
   }
