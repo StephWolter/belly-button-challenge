@@ -1,5 +1,5 @@
 # belly-button-challenge
- # Use Javascript.
+ # Use Javascript to create a dashboard for data visualizations.
 
 ## SetUp
 
@@ -25,27 +25,26 @@
 * Pushed regularly to git repository.
 * In Visual Studio Code opened given starter files.
 * Followed link in the starter files to examine raw data.
+* Wrote code to pull json data from the website.
+* Created lists for **bbSamples** with the samples data 
+* **bbIDs** for the IDs (names)
+* **bbMeta** for the metadata per name.
 
-## Part 1: DropDown Menu
-
-* 
+## Part 1: DropDown Menu 
+* Used a loop to populate the drop down menu
+* Pulled IDs from **bbIDs**
+* Appended each new ID to the menu.
 
 ## Part 2: MetaData Chart
-* 
+* Created a function **createMetadataChart**
 
 ## Part 3: Bar, Bubble, and Gauge Chart
 * Bar Chart 
-    * Check how many records are available
-    * Check a record to see the structure.
-    * Convert to dataframe **grossest_df**
+    * 
 * Bubble Chart
-    * Check how many records are available
-    * Check a record to see the structure.
-    * Convert to dataframe **best_df**
+    * 
 * Gauge Chart
-    * Check how many records are available
-    * Check a record to see the structure.
-    * Convert to dataframe **competition_df**
+    * 
 
 ## Publish a page with dashboard
 * [Belly Button Bacteria Dashboard](https://stephwolter.github.io/belly-button-challenge/)
